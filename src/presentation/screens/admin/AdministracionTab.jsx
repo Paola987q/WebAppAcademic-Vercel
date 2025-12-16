@@ -93,14 +93,6 @@ export default function AdministracionTab() {
             fallback= "/admin/dashboard"
           />
 
-          <AdminButton
-            icon={<LibraryBooks sx={{ fontSize: 40 }} />} // Puedes cambiar por otro ícono más representativo
-            label="Gestionar Notas"
-            color="#4db6ac"
-            to="/admin/gestionnotas" // Ruta donde crearás la pantalla de gestión de notas
-            fallback="/admin/dashboard"
-          />
-
 
         </Section>
 
