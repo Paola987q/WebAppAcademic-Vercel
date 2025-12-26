@@ -4,8 +4,6 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 
-console.log("API KEY:", import.meta.env.VITE_FB_API_KEY);
-
 // Configuración de Firebase
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FB_API_KEY,
@@ -22,3 +20,4 @@ const auth = getAuth(app);
 const db = getFirestore(app);
 
 export { auth, db };
+
