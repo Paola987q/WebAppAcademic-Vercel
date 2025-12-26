@@ -3,7 +3,10 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-// Configuración de Firebase 
+
+console.log("API KEY:", import.meta.env.VITE_FB_API_KEY);
+
+// Configuración de Firebase
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FB_API_KEY,
   authDomain: import.meta.env.VITE_FB_AUTH_DOMAIN,
@@ -13,12 +16,9 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FB_APP_ID,
 };
 
-// Inicializar Firebase
 const app = initializeApp(firebaseConfig);
 
-// Servicios
 const auth = getAuth(app);
 const db = getFirestore(app);
 
 export { auth, db };
-
